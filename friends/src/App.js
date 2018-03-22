@@ -9,7 +9,7 @@ import { addFriends } from "./actions/actions";
 
 class App extends Component {
   render() {
-    document.body.style.background = "#DDDFDF";
+    document.body.style.background = "#d7f4f4";
 
     return (
       <Container className="App my-5 ">
@@ -17,6 +17,7 @@ class App extends Component {
           <div className=" my-auto">Friend Face</div>
         </Row>
         <FriendListComponent />
+        <hr />
         <FormComponent submit={this.props.addFriends} />
       </Container>
     );

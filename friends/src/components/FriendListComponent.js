@@ -23,7 +23,10 @@ class FriendListComponent extends Component {
 }
 const mapStateToProps = state => {
   return {
-    friends: state.friends
+    friends: state.friends,
+    adding: state.adding,
+    updating: state.updating,
+    deleting: state.deleting
   };
 };
 
